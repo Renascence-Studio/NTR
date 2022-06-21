@@ -1,0 +1,14 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT"
+[[mods]]
+modId="ntr"
+version="${file.jarVersion}"
+displayName="Nethe-Transition-Remains"
+authors="Renascence-Studio, Chemiofitor"
+[[dependencies.ntr]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40,)"
+    ordering="NONE"
+    side="BOTH"
