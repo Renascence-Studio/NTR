@@ -16,7 +16,7 @@ apply plugin: 'net.minecraftforge.gradle'
 
 version = '1.18.2-0.0.1'
 group = 'studio.renascence.ntr'
-archivesBaseName = 'Nethe-Transition-Remains'
+archivesBaseName = 'Nether-Transition-Remains'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -88,6 +88,10 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
     maven {
+        name 'Progwml6 maven'
+        url 'https://dvs1.progwml6.com/files/maven'
+    }
+    maven {
         url "https://www.cursemaven.com"
         content {
             includeGroup "curse.maven"
@@ -97,13 +101,14 @@ repositories {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.4'
-	
+
+    runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.3.143")
 }
 
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "Nethe-Transition-Remains",
+                "Specification-Title"     : "Nether-Transition-Remains",
                 "Specification-Vendor"    : "Renascence-Studio",
                 "Specification-Version"   : "1",
                 "Implementation-Title"    : project.name,
