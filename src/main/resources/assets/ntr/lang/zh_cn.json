@@ -1,3 +1,9 @@
 {
-  "itemGroup.ntr": "地狱迁跃堡"
+  "itemGroup.ntr": "地狱迁跃堡",
+
+  "block.ntr.sanguinite_bricks": "狱炎砖块",
+  "block.ntr.chiseled_sanguinite_bricks": "錾制狱炎砖块",
+  "block.ntr.cracked_sanguinite_bricks": "裂纹狱炎砖块",
+  "block.ntr.sanguinite_brick_stairs": "狱炎砖块楼梯",
+  "block.ntr.sanguinite_brick_slab": "狱炎砖块台阶"
 }
