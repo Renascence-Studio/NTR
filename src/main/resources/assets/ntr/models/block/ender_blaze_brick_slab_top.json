@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "ntr:block/ender_blaze_bricks",
+    "top": "ntr:block/ender_blaze_bricks",
+    "side": "ntr:block/ender_blaze_bricks"
+  }
+}

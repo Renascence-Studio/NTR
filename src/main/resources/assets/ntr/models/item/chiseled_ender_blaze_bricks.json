@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ntr:block/chiseled_ender_blaze_bricks"
+  }
+}

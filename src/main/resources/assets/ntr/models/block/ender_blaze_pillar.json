@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ntr:block/ender_blaze_pillar_top",
+    "side": "ntr:block/ender_blaze_pillar"
+  }
+}

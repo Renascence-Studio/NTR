@@ -5,5 +5,14 @@
   "block.ntr.chiseled_sanguinite_bricks": "Chiseled Sanguinite Bricks",
   "block.ntr.cracked_sanguinite_bricks": "Cracked Sanguinite Bricks",
   "block.ntr.sanguinite_brick_stairs": "Sanguinite Brick Stairs",
-  "block.ntr.sanguinite_brick_slab": "Sanguinite Brick Slab"
+  "block.ntr.sanguinite_brick_slab": "Sanguinite Brick Slab",
+  "block.ntr.sanguinite_brick_fence": "Sanguinite Brick Fence",
+
+  "block.ntr.ender_transmission_block": "Ender Transmission Block",
+  "block.ntr.ender_transmission_fire": "Ender Transmission Fire",
+  "block.ntr.ender_blaze_bricks": "Ender Blaze Bricks",
+  "block.ntr.chiseled_ender_blaze_bricks": "Chiseled Ender Blaze Bricks",
+  "block.ntr.ender_blaze_pillar": "Ender Blaze Pillar",
+  "block.ntr.ender_blaze_brick_stairs": "Ender Blaze Brick Stairs",
+  "block.ntr.ender_blaze_brick_slab": "Ender Blaze Brick Slab"
 }

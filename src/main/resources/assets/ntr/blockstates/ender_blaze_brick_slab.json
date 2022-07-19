@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ntr:block/ender_blaze_brick_slab"
+    },
+    "type=double": {
+      "model": "ntr:block/ender_blaze_bricks"
+    },
+    "type=top": {
+      "model": "ntr:block/ender_blaze_brick_slab_top"
+    }
+  }
+}
