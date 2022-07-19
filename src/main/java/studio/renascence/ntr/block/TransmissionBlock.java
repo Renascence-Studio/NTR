@@ -10,13 +10,13 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.FlintAndSteelItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
+import studio.renascence.ntr.init.NTRItems;
 
 public class TransmissionBlock extends Block {
     private final ResourceKey<Level> resourceKey;
@@ -28,7 +28,7 @@ public class TransmissionBlock extends Block {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
-        if (result.getDirection() == Direction.UP && player.getItemInHand(hand).getItem() instanceof FlintAndSteelItem) {
+        if (result.getDirection() == Direction.UP && player.getItemInHand(hand).getItem() == NTRItems.ENDER_BLAZE_FLINT_AND_STEEL.get()) {
             level.playSound(player, pos.above(), SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS, 1.0F, level.getRandom().nextFloat() * 0.4F + 0.8F);
             level.setBlock(pos.above(), TransmissionFireBlock.MAP.get(this).defaultBlockState(), 11);
             level.gameEvent(player, GameEvent.BLOCK_PLACE, pos.above());

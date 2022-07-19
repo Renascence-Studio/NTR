@@ -1,6 +1,7 @@
 package studio.renascence.ntr.init;
 
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.FlintAndSteelItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -44,6 +45,8 @@ public class NTRItems {
             () -> new BlockItem(NTRBlocks.ENDER_BLAZE_BRICK_STAIRS.get(), itemPro()));
     public static final RegistryObject<Item> ENDER_BLAZE_BRICK_SLAB = ITEMS.register("ender_blaze_brick_slab",
             () -> new BlockItem(NTRBlocks.ENDER_BLAZE_BRICK_SLAB.get(), itemPro()));
+    public static final RegistryObject<Item> ENDER_BLAZE_FLINT_AND_STEEL = ITEMS.register("ender_blaze_flint_and_steel",
+            () -> new FlintAndSteelItem(itemPro()));
 
     public static Item.Properties itemPro() {
         return new Item.Properties().tab(Tabs.MAIN).fireResistant();
