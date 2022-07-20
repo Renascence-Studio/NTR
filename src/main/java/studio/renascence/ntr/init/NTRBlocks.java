@@ -7,7 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import studio.renascence.ntr.NTR;
-import studio.renascence.ntr.block.NTRProperties;
+import studio.renascence.ntr.util.NTRProperties;
 import studio.renascence.ntr.block.PillarBlock;
 import studio.renascence.ntr.block.TransmissionBlock;
 import studio.renascence.ntr.block.TransmissionFireBlock;
@@ -35,7 +35,7 @@ public class NTRBlocks {
     public static final RegistryObject<Block> ENDER_TRANSMIT_BLOCK = BLOCKS.register("ender_transmission_block",
             () -> new TransmissionBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN), Level.END));
     public static final RegistryObject<Block> ENDER_TRANSMIT_FIRE = BLOCKS.register("ender_transmission_fire",
-            () -> new TransmissionFireBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_FIRE), ENDER_TRANSMIT_BLOCK.get()));
+            () -> new TransmissionFireBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_FIRE).explosionResistance(50000F), ENDER_TRANSMIT_BLOCK.get()));
 
     public static final RegistryObject<Block> ENDER_BLAZE_BRICKS = BLOCKS.register("ender_blaze_bricks",
             () -> new Block(NTRProperties.ENDER_BLAZE_BLOCK));

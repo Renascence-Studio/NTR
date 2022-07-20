@@ -87,12 +87,16 @@ repositories {
         name 'Progwml6 maven'
         url 'https://dvs1.progwml6.com/files/maven'
     }
+    maven {
+        url "https://maven.firstdarkdev.xyz/snapshots"
+    }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.4'
 
     runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.3.143")
+    implementation fg.deobf("com.lowdragmc.shimmer:Shimmer-forge-1.18.2:0.1.9")
 }
 
 jar.finalizedBy('reobfJar')

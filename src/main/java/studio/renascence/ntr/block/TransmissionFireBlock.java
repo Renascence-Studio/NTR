@@ -4,6 +4,8 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -20,6 +22,8 @@ import net.minecraft.world.phys.shapes.Shapes;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static studio.renascence.ntr.block.TransmissionBlock.ACT;
 
 public class TransmissionFireBlock extends BaseFireBlock {
     public static Map<Block, TransmissionFireBlock> MAP = new HashMap<>();
@@ -45,10 +49,16 @@ public class TransmissionFireBlock extends BaseFireBlock {
             if (entity instanceof Player) {
                 if (canChangeDimension((LivingEntity) entity) || ((Player) entity).isCreative()) {
                     changeDimension(state, level, pos, entity, key);
+                    level.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
+                    level.playSound(null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1.0F,1.0F);
+                    level.setBlock(pos.below(), baseBlock.defaultBlockState().setValue(ACT, Boolean.FALSE), 233);
                 }
             }else {
                 if (canChangeDimension((LivingEntity) entity)) {
                     changeDimension(state, level, pos, entity, key);
+                    level.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
+                    level.playSound(null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1.0F,1.0F);
+                    level.setBlock(pos.below(), baseBlock.defaultBlockState().setValue(ACT, Boolean.FALSE), 233);
                 }
             }
         }

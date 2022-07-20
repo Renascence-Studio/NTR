@@ -1,6 +1,9 @@
 {
   "variants": {
-    "": {
+    "active_state=false": {
+      "model": "ntr:block/unactivated_ender_transmission_block"
+    },
+    "active_state=true": {
       "model": "ntr:block/ender_transmission_block"
     }
   }

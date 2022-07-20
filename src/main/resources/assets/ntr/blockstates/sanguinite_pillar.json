@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=east": {
+      "model": "ntr:block/sanguinite_pillar",
+      "y": 90
+    },
+    "facing=north": {
       "model": "ntr:block/sanguinite_pillar"
+    },
+    "facing=south": {
+      "model": "ntr:block/sanguinite_pillar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ntr:block/sanguinite_pillar",
+      "y": 270
     }
   }
 }

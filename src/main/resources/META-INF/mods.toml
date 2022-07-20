@@ -4,8 +4,8 @@ license="MIT"
 [[mods]]
 modId="ntr"
 version="${file.jarVersion}"
-displayName="Nether-Transition-Remains"
-authors="Renascence-Studio, Chemiofitor, KLS, Naive-Ranger"
+displayName="Nether Transition Remains"
+authors="Renascence-Studio, Chemiofitor, Naive Ranger, GQ2529, Craft_Ziyang"
 [[dependencies.ntr]]
     modId="forge"
     mandatory=true

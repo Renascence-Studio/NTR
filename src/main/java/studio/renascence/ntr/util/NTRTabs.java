@@ -7,7 +7,7 @@ import studio.renascence.ntr.init.NTRItems;
 
 import javax.annotation.Nonnull;
 
-public class Tabs {
+public class NTRTabs {
     public static final CreativeModeTab MAIN = new CreativeModeTab(NTR.MODID) {
         @Nonnull
         @Override
