@@ -49,16 +49,16 @@ public class TransmissionFireBlock extends BaseFireBlock {
             if (entity instanceof Player) {
                 if (canChangeDimension((LivingEntity) entity) || ((Player) entity).isCreative()) {
                     changeDimension(state, level, pos, entity, key);
-                    level.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
+                    level.setBlock(pos, Blocks.AIR.defaultBlockState(), UPDATE_ALL);
                     level.playSound(null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1.0F,1.0F);
-                    level.setBlock(pos.below(), baseBlock.defaultBlockState().setValue(ACT, Boolean.FALSE), 233);
+                    level.setBlock(pos.below(), baseBlock.defaultBlockState().setValue(ACT, Boolean.FALSE), UPDATE_ALL);
                 }
             }else {
                 if (canChangeDimension((LivingEntity) entity)) {
                     changeDimension(state, level, pos, entity, key);
-                    level.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
+                    level.setBlock(pos, Blocks.AIR.defaultBlockState(), UPDATE_ALL);
                     level.playSound(null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1.0F,1.0F);
-                    level.setBlock(pos.below(), baseBlock.defaultBlockState().setValue(ACT, Boolean.FALSE), 233);
+                    level.setBlock(pos.below(), baseBlock.defaultBlockState().setValue(ACT, Boolean.FALSE), UPDATE_ALL);
                 }
             }
         }

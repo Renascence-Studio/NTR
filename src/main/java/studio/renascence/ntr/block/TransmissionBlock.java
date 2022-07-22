@@ -57,9 +57,9 @@ public class TransmissionBlock extends Block {
             CriteriaTriggers.PLACED_BLOCK.trigger((ServerPlayer)player, pos.above(), itemstack);
             itemstack.hurtAndBreak(1, player, (player1) -> player1.broadcastBreakEvent(hand));
         }
-        level.setBlock(pos.above(), TransmissionFireBlock.MAP.get(this).defaultBlockState(), 233);
+        level.setBlock(pos.above(), TransmissionFireBlock.MAP.get(this).defaultBlockState(), UPDATE_ALL);
         level.getBlockState(pos).setValue(ACT, true);
-        level.setBlock(pos, defaultBlockState().setValue(ACT, Boolean.TRUE), 233);
+        level.setBlock(pos, defaultBlockState().setValue(ACT, Boolean.TRUE), UPDATE_ALL);
         return InteractionResult.sidedSuccess(level.isClientSide());
     }
 

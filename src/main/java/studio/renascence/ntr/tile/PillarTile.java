@@ -8,6 +8,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.StackedContents;
 import net.minecraft.world.inventory.StackedContentsCompatible;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
@@ -17,6 +18,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import studio.renascence.ntr.init.NTRTileTypes;
 
 import javax.annotation.Nullable;
+import java.util.Objects;
 
 public class PillarTile extends BaseTileEntity implements StackedContentsCompatible, WorldlyContainer {
     private ItemStackHandler stack = new ItemStackHandler(1);
@@ -78,9 +80,18 @@ public class PillarTile extends BaseTileEntity implements StackedContentsCompati
         return this.stack.extractItem(slot, Math.min(stack.getSlotLimit(slot), stack.getStackInSlot(slot).getMaxStackSize()), false);
     }
 
+    public void setItem(ItemStack stack) {
+        this.setItem(0, stack);
+    }
+
     @Override
     public void setItem(int slot, ItemStack stack) {
         this.stack.setStackInSlot(slot, stack);
+
+        // From org.teacon.xkdeco.blockentity.ItemDisplayBlockEntity.java
+        this.setChanged();
+        var blockState = this.getBlockState();
+        Objects.requireNonNull(this.level).sendBlockUpdated(this.getBlockPos(), blockState, blockState, Block.UPDATE_ALL);
     }
 
     @Override
