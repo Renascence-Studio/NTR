@@ -45,7 +45,7 @@ public class PillarBlock extends BaseEntityBlock {
         VoxelShape shape4 = Block.box(2, 12, 2, 14, 13, 14);
         VoxelShape shape5 = Block.box(1, 13, 1, 15, 14, 15);
         VoxelShape shape6 = Block.box(2, 14, 2, 14, 15, 14);
-        return Shapes.or(shape1,shape2,shape3,shape4,shape5,shape6);
+        return Shapes.or(shape1, shape2, shape3, shape4, shape5, shape6);
     }
 
     public BlockState getStateForPlacement(BlockPlaceContext context) {
@@ -83,14 +83,14 @@ public class PillarBlock extends BaseEntityBlock {
         if (blockentity instanceof PillarTile tile) {
             ItemStack handStack = player.getItemInHand(hand);
             if (tile.isEmpty() && !handStack.isEmpty()) {
-                tile.setItem(0, getCountedItem(1, handStack));
+                tile.setItem(getCountedItem(1, handStack));
                 handStack.shrink(1);
                 return InteractionResult.SUCCESS;
-            }else if (!tile.isEmpty() && handStack.isEmpty()) {
-                if (!player.addItem(tile.getItem(0))) {
-                    player.drop(tile.getItem(0), false);
+            } else if (!tile.isEmpty() && handStack.isEmpty()) {
+                if (!player.addItem(tile.getItem())) {
+                    player.drop(tile.getItem(), false);
                 }
-                tile.setItem(0, ItemStack.EMPTY);
+                tile.setItem(ItemStack.EMPTY);
                 return InteractionResult.SUCCESS;
             }
         }
@@ -135,7 +135,7 @@ public class PillarBlock extends BaseEntityBlock {
             BlockEntity blockentity = level.getBlockEntity(pos);
             if (blockentity instanceof PillarTile) {
                 if (level instanceof ServerLevel) {
-                    Containers.dropContents(level, pos, (PillarTile)blockentity);
+                    Containers.dropContents(level, pos, (PillarTile) blockentity);
                 }
 
                 level.updateNeighbourForOutputSignal(pos, this);
