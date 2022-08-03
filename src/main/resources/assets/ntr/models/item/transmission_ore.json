@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "ntr:block/unactivated_ender_transmission_block"
+    "all": "ntr:block/transmission_ore"
   }
 }

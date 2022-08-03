@@ -15,7 +15,7 @@ public class NTR {
         final IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         if (ModList.get().isLoaded("shimmer")) {
-            FMLJavaModLoadingContext.get().getModEventBus().addListener(NTRSimmer::setup);
+            bus.addListener(NTRSimmer::setup);
         }
 
         NTRUtil.register(bus);

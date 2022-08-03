@@ -9,7 +9,7 @@ public class NTRSimmer {
     public static void setup(final FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             LightManager.INSTANCE.registerBlockLight(NTRBlocks.ENDER_TRANSMIT_FIRE.get(),
-                    (state, pos) -> new ColorPointLight.Template(10, 0xff45D1BE));
+                    (state, pos) -> new ColorPointLight.Template(8, 0xff45D1BE));
         });
     }
 }

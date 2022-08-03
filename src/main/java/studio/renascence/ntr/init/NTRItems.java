@@ -73,6 +73,9 @@ public class NTRItems {
     public static final RegistryObject<Item> TRANSMISSION_SHEARS = ITEMS.register("transmission_shears",
             () -> new ShearsItem(itemPro().durability(514)));
 
+    public static final RegistryObject<Item> TRANSMISSION_ORE = ITEMS.register("transmission_ore",
+            () -> new BlockItem(NTRBlocks.TRANSMISSION_ORE.get(), itemPro()));
+
     public static Item.Properties itemPro() {
         return new Item.Properties().tab(NTRTabs.MAIN).fireResistant();
     }

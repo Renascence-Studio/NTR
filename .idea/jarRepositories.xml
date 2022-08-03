@@ -17,6 +17,11 @@
       <option name="url" value="https://repo.maven.apache.org/maven2/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://maven.firstdarkdev.xyz/snapshots" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="maven2" />
       <option name="name" value="maven2" />
       <option name="url" value="https://maven.minecraftforge.net/" />
@@ -27,19 +32,9 @@
       <option name="url" value="https://libraries.minecraft.net/" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="maven" />
-      <option name="name" value="maven" />
-      <option name="url" value="https://www.cursemaven.com" />
-    </remote-repository>
-    <remote-repository>
       <option name="id" value="Progwml6 maven" />
       <option name="name" value="Progwml6 maven" />
       <option name="url" value="https://dvs1.progwml6.com/files/maven" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven" />
-      <option name="name" value="maven" />
-      <option name="url" value="https://maven.firstdarkdev.xyz/snapshots" />
     </remote-repository>
   </component>
 </project>

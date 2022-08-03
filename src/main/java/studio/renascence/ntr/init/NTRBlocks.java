@@ -1,5 +1,6 @@
 package studio.renascence.ntr.init;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -48,4 +49,7 @@ public class NTRBlocks {
             () -> new StairBlock(() -> ENDER_BLAZE_BRICKS.get().defaultBlockState(), NTRProperties.ENDER_BLAZE_BLOCK));
     public static final RegistryObject<Block> ENDER_BLAZE_BRICK_SLAB = BLOCKS.register("ender_blaze_brick_slab",
             () -> new SlabBlock(NTRProperties.ENDER_BLAZE_BLOCK));
+
+    public static final RegistryObject<Block> TRANSMISSION_ORE = BLOCKS.register("transmission_ore",
+            () -> new OreBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE), UniformInt.of(0, 2)));
 }
