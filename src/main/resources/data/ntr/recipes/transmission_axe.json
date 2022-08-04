@@ -10,10 +10,10 @@
       "item": "ntr:transmission_ingot"
     },
     "s": {
-      "item": "minecraft:stick"
+      "item": "ntr:transmission_stick"
     }
   },
   "result": {
-    "item": "ntr:transmission_pickaxe"
+    "item": "ntr:transmission_axe"
   }
 }

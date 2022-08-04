@@ -12,7 +12,7 @@ public class NTRTabs {
         @Nonnull
         @Override
         public ItemStack makeIcon() {
-            return NTRItems.SANGUINITE_BRICKS.get().getDefaultInstance();
+            return NTRItems.ENDER_TRANSMIT_FIRE.get().getDefaultInstance();
         }
     };
 }

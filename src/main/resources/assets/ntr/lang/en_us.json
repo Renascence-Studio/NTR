@@ -11,6 +11,8 @@
 
   "block.ntr.ender_transmission_block": "Ender Transmission Block",
   "block.ntr.ender_transmission_fire": "Ender Transmission Fire",
+  "block.ntr.deco_ender_transmission_fire": "Decorative Ender Transmission Fire",
+
   "block.ntr.ender_blaze_bricks": "Ender-Blaze Transmission Bricks",
   "block.ntr.chiseled_ender_blaze_bricks": "Chiseled Ender-Blaze Transmission Bricks",
   "block.ntr.ender_blaze_pillar": "Ender-Blaze Transmission Pillar",
@@ -33,5 +35,14 @@
   "item.ntr.transmission_axe": "Transmission Axe",
   "item.ntr.transmission_hoe": "Transmission Hoe",
   "item.ntr.transmission_shovel": "Transmission Shovel",
-  "item.ntr.transmission_shears": "Transmission Shears"
+  "item.ntr.transmission_shears": "Transmission Shears",
+
+  "item.ntr.transmission_helmet": "Transmission Helmet",
+  "item.ntr.transmission_chestplate": "Transmission Chestplate",
+  "item.ntr.transmission_leggings": "Transmission Leggings",
+  "item.ntr.transmission_boots": "Transmission Boots",
+
+  "item.ntr.transmission_bucket": "Transmission Bucket",
+  "item.ntr.water_transmission_bucket": "Water Transmission Bucket",
+  "item.ntr.lava_transmission_bucket": "Lava Transmission Bucket"
 }

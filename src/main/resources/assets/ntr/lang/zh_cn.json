@@ -11,6 +11,8 @@
 
   "block.ntr.ender_transmission_block": "末地迁跃核心",
   "block.ntr.ender_transmission_fire": "末地迁跃火焰",
+  "block.ntr.deco_ender_transmission_fire": "装饰用末地迁跃火焰",
+
   "block.ntr.ender_blaze_bricks": "末炎迁跃砖块",
   "block.ntr.chiseled_ender_blaze_bricks": "錾制末炎迁跃砖块",
   "block.ntr.ender_blaze_pillar": "末炎迁跃柱",
@@ -33,5 +35,14 @@
   "item.ntr.transmission_axe": "迁跃斧",
   "item.ntr.transmission_hoe": "迁跃锄",
   "item.ntr.transmission_shovel": "迁跃铲",
-  "item.ntr.transmission_shears": "迁跃剪刀"
+  "item.ntr.transmission_shears": "迁跃剪刀",
+
+  "item.ntr.transmission_helmet": "迁跃头盔",
+  "item.ntr.transmission_chestplate": "迁跃胸甲",
+  "item.ntr.transmission_leggings": "迁跃护腿",
+  "item.ntr.transmission_boots": "迁跃靴子",
+
+  "item.ntr.transmission_bucket": "迁跃桶",
+  "item.ntr.water_transmission_bucket": "迁跃水桶",
+  "item.ntr.lava_transmission_bucket": "迁跃岩浆桶"
 }

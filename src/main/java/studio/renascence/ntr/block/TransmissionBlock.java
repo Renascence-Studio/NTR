@@ -49,11 +49,11 @@ public class TransmissionBlock extends Block {
     }
 
     private InteractionResult createFire(Level level, BlockPos pos, Player player, InteractionHand hand) {
-        level.explode(null, pos.getX(), pos.getY()+0.2F, pos.getZ(), 2.5F, Explosion.BlockInteraction.NONE);
         level.playSound(player, pos.above(), SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS, 1.0F, level.getRandom().nextFloat() * 0.4F + 0.8F);
         level.gameEvent(player, GameEvent.BLOCK_PLACE, pos.above());
         ItemStack itemstack = player.getItemInHand(hand);
         if (player instanceof ServerPlayer) {
+            level.explode(null, pos.getX(), pos.getY()+0.2F, pos.getZ(), 2.5F, Explosion.BlockInteraction.NONE);
             CriteriaTriggers.PLACED_BLOCK.trigger((ServerPlayer)player, pos.above(), itemstack);
             itemstack.hurtAndBreak(1, player, (player1) -> player1.broadcastBreakEvent(hand));
         }

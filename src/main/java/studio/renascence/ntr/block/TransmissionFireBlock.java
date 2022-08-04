@@ -17,15 +17,17 @@ import net.minecraft.world.level.block.BaseFireBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.Shapes;
+import studio.renascence.ntr.NTRConfig;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static studio.renascence.ntr.block.TransmissionBlock.ACT;
-
 public class TransmissionFireBlock extends BaseFireBlock {
+    public static final BooleanProperty ACT = BooleanProperty.create("active_state");
     public static Map<Block, TransmissionFireBlock> MAP = new HashMap<>();
     private final Block baseBlock;
 
@@ -33,6 +35,12 @@ public class TransmissionFireBlock extends BaseFireBlock {
         super(properties, 1.5F);
         baseBlock = block;
         MAP.put(block, this);
+        this.registerDefaultState(this.stateDefinition.any().setValue(ACT, Boolean.TRUE));
+    }
+
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(ACT);
     }
 
     @Override
@@ -44,7 +52,7 @@ public class TransmissionFireBlock extends BaseFireBlock {
 
     @Override
     public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
-        if (entity.isAlive() && entity instanceof LivingEntity) {
+        if (entity.isAlive() && entity instanceof LivingEntity && level.getBlockState(pos).getValue(ACT)) {
             ResourceKey<Level> key = level.dimension() == ((TransmissionBlock) baseBlock).getResourceKey() ? Level.OVERWORLD : ((TransmissionBlock) baseBlock).getResourceKey();
             if (entity instanceof Player) {
                 if (canChangeDimension((LivingEntity) entity) || ((Player) entity).isCreative()) {
@@ -80,7 +88,7 @@ public class TransmissionFireBlock extends BaseFireBlock {
     }
 
     private static boolean canChangeDimension(LivingEntity entity) {
-        return entity.getHealth() <= entity.getMaxHealth() * 0.2;
+        return entity.getHealth() <= entity.getMaxHealth() * NTRConfig.TRANSMISSION_HEALTH.get();
     }
 
     @Override

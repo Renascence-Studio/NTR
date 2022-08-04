@@ -11,7 +11,7 @@ import studio.renascence.ntr.init.NTRItems;
 
 import java.util.function.Supplier;
 
-public enum NTRTiers implements Tier {
+public enum NTRItemTiers implements Tier {
     TRANSMISSION(2, 514, 6.0F, 2.0F, 8, () -> Ingredient.of(NTRItems.TRANSMISSION_INGOT.get()));
 
     private final int level;
@@ -21,7 +21,7 @@ public enum NTRTiers implements Tier {
     private final int enchantmentValue;
     private final LazyLoadedValue<Ingredient> repairIngredient;
 
-    NTRTiers(int level, int uses, float speed, float damage, int ev, Supplier<Ingredient> ingredient) {
+    NTRItemTiers(int level, int uses, float speed, float damage, int ev, Supplier<Ingredient> ingredient) {
         this.level = level;
         this.uses = uses;
         this.speed = speed;
@@ -50,7 +50,7 @@ public enum NTRTiers implements Tier {
         return this.enchantmentValue;
     }
 
-    public Ingredient getRepairIngredient() {
+    public @NotNull Ingredient getRepairIngredient() {
         return this.repairIngredient.get();
     }
 

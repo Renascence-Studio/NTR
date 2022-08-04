@@ -9,8 +9,7 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -25,7 +24,8 @@ public class OreGen {
     public static void registerOreFeatures() {
         List<OreConfiguration.TargetBlockState> transmissionOre = List.of(OreConfiguration.target(OreFeatures.NETHERRACK, NTRBlocks.TRANSMISSION_ORE.get().defaultBlockState()));
 
-        ORE_TRANSMISSION = registerPlacedOreFeature("transmission_ore", new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(transmissionOre, 14)), PlacementUtils.RANGE_10_10);
+        ORE_TRANSMISSION = registerPlacedOreFeature("transmission_ore", new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(transmissionOre, 14)),
+                commonOrePlacement(9, PlacementUtils.RANGE_10_10));
     }
 
     @SubscribeEvent
@@ -34,7 +34,15 @@ public class OreGen {
             event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, ORE_TRANSMISSION);
     }
 
-    private static <C extends FeatureConfiguration, F extends Feature<C>> Holder<PlacedFeature> registerPlacedOreFeature(String regName, ConfiguredFeature<C, F> feature, PlacementModifier ... placementModifiers) {
+    private static <C extends FeatureConfiguration, F extends Feature<C>> Holder<PlacedFeature> registerPlacedOreFeature(String regName, ConfiguredFeature<C, F> feature, List<PlacementModifier> placementModifiers) {
         return PlacementUtils.register(regName, Holder.direct(feature), placementModifiers);
+    }
+
+    private static List<PlacementModifier> orePlacement(PlacementModifier modifier, PlacementModifier modifier1) {
+        return List.of(modifier, InSquarePlacement.spread(), modifier1, BiomeFilter.biome());
+    }
+
+    private static List<PlacementModifier> commonOrePlacement(int count, PlacementModifier modifier) {
+        return orePlacement(CountPlacement.of(count), modifier);
     }
 }
