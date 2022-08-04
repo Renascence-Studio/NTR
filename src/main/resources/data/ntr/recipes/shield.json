@@ -15,6 +15,6 @@
   },
   "result": {
     "item": "minecraft:shield",
-    "nbt": "{BlockEntityTag:{Base:1,Patterns:[{Pattern:gra,Color:5}]}}"
+    "nbt": "{BlockEntityTag:{Base:14,Patterns:[{Pattern:gra,Color:10}]}}"
   }
 }

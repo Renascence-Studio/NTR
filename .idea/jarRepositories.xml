@@ -36,5 +36,10 @@
       <option name="name" value="Progwml6 maven" />
       <option name="url" value="https://dvs1.progwml6.com/files/maven" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="BlameJared Maven" />
+      <option name="name" value="BlameJared Maven" />
+      <option name="url" value="https://maven.blamejared.com" />
+    </remote-repository>
   </component>
 </project>

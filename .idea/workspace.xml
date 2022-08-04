@@ -5,66 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="645b4569-25c0-43c1-afa5-78df03d9f71b" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/block/DecoTransmissionFireBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/event/DropNTRHeadEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/item/TranBucketItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/NTRArmorMaterials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/textures/models/armor/transmission_layer_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/textures/models/armor/transmission_layer_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/deco_ender_transmission_fire.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/deco_ender_transmission_fire.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/lava_transmission_bucket.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmission_boots.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmission_bucket.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmission_chestplate.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmission_helmet.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmission_leggings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/water_transmission_bucket.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/lava_transmission_bucket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_boots.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_bucket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_chestplate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_helmet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_leggings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/water_transmission_bucket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/shield.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_boots.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_chestplate.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_helmet.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_leggings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_shovel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/redstone_from_blasting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/redstone_from_smelting.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/block/TransmissionBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/block/TransmissionBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/block/TransmissionFireBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/block/TransmissionFireBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/compat/NTRSimmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/compat/NTRSimmer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/NTRTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/NTRTabs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/NTRTiers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/NTRItemTiers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/world/OreGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/world/OreGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/zh_cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/zh_cn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/ender_gemstone.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/ender_gemstone.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_axe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_axe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_dust.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_dust.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_hoe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_hoe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_ingot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_ingot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_knife.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_knife.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_pickaxe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_pickaxe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shears.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shears.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shovel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shovel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_stick.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_stick.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_sword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_hoe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_hoe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_shears.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_shears.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/shield.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/shield.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +64,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -148,7 +94,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/ntr/recipes" />
     <property name="project.structure.last.edited" value="项目" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.21038961" />
@@ -157,10 +103,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MOD\NTR\src\main\resources\data\ntr\recipes" />
       <recent name="D:\MOD\NTR\src\main\resources\assets\ntr\models\item" />
       <recent name="D:\MOD\NTR\src\main\resources\assets\ntr\blockstates" />
       <recent name="D:\MOD\NTR\src\main\resources\data\ntr\advancements\ntr" />
-      <recent name="D:\MOD\NTR\src\main\resources\data\ntr\recipes" />
       <recent name="C:\Users\Administrator\Desktop" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -175,7 +121,7 @@
       <recent name="studio.renascence.ntr.block" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.NTR [build]">
+  <component name="RunManager" selected="应用程序.runClient">
     <configuration name="NTR [build]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />

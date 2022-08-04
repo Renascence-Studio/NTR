@@ -90,6 +90,10 @@ repositories {
     maven {
         url "https://maven.firstdarkdev.xyz/snapshots"
     }
+    maven {
+        url = 'https://maven.blamejared.com'
+        name = 'BlameJared Maven'
+    }
 }
 
 dependencies {
