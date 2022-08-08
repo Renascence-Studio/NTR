@@ -10,7 +10,6 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
+import studio.renascence.ntr.init.NTRTags;
 import studio.renascence.ntr.tile.PillarTile;
 
 import javax.annotation.Nonnull;
@@ -107,7 +107,8 @@ public class PillarBlock extends BaseEntityBlock {
     public void animateTick(BlockState state, Level level, BlockPos pos, Random random) {
         BlockEntity blockentity = level.getBlockEntity(pos);
         if (blockentity instanceof PillarTile) {
-            if (((PillarTile) blockentity).getItem(0).is(Items.ENDER_EYE)) {
+            ItemStack stack = ((PillarTile) blockentity).getItem();
+            if (stack.is(NTRTags.PARTICLE_BEARING)) {
                 for (int j = 0; j < 5; ++j) {
                     double d0 = (double) pos.getX() + random.nextDouble();
                     double d1 = (double) pos.getY() + 0.5D + random.nextDouble();

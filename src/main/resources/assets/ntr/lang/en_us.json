@@ -20,6 +20,8 @@
   "block.ntr.ender_blaze_brick_slab": "Ender-Blaze Transmission Brick Slab",
 
   "block.ntr.transmission_ore": "Transmission Ore",
+  "block.ntr.transmission_dust_block": "Transmission Dust Block",
+  "block.ntr.transmission_ingot_block": "Transmission Ingot Block",
 
   "item.ntr.ender_blaze_flint_and_steel": "Ender-Blaze Transmission Flint and Steel",
   "item.ntr.real_ntr_head": "Mooshroom Head",

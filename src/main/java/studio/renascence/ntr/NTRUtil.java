@@ -4,6 +4,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
 import studio.renascence.ntr.init.NTRBlocks;
 import studio.renascence.ntr.init.NTRItems;
+import studio.renascence.ntr.init.NTRTags;
 import studio.renascence.ntr.init.NTRTileTypes;
 
 public class NTRUtil {
@@ -12,6 +13,7 @@ public class NTRUtil {
         NTRItems.ITEMS.register(bus);
         NTRBlocks.BLOCKS.register(bus);
         NTRTileTypes.TYPES.register(bus);
+        NTRTags.PARTICLE_BEARING.registry();
     }
 
     public static ResourceLocation modRL(String path) {

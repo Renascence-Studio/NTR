@@ -5,11 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="645b4569-25c0-43c1-afa5-78df03d9f71b" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/redstone_from_blasting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/redstone_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/block/GlitterableBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRTags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/transmission_dust_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/transmission_ingot_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/transmission_dust_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/transmission_dust_block_lit.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/transmission_ingot_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/transmission_ingot_block_lit.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmission_dust_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmission_ingot_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_bottom_lit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_bottom_lit.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_side.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_side_lit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_side_lit.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_top_lit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_top_lit.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot_lit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot_lit.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/models/armor/transmission_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/models/armor/transmission_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/fire.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/transmission_dust_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/transmission_ingot_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_bucket.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_dust_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmission_ingot_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/tags/items/particle_bearing.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/shield.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/shield.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/block/PillarBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/block/PillarBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/NTRArmorMaterials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/NTRArmorMaterials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/textures/models/armor/transmission_layer_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/textures/models/armor/transmission_layer_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/zh_cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/zh_cn.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/transmission_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/transmission_ore.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,24 +143,24 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MOD\NTR\src\main\resources\data\ntr\recipes" />
+      <recent name="D:\MOD\NTR\src\main\resources\data\minecraft\tags\blocks" />
       <recent name="D:\MOD\NTR\src\main\resources\assets\ntr\models\item" />
-      <recent name="D:\MOD\NTR\src\main\resources\assets\ntr\blockstates" />
-      <recent name="D:\MOD\NTR\src\main\resources\data\ntr\advancements\ntr" />
-      <recent name="C:\Users\Administrator\Desktop" />
+      <recent name="D:\MOD\NTR\src\main\resources\data\ntr\loot_tables\blocks" />
+      <recent name="D:\MOD\NTR\src\main\resources\assets\ntr\models\block" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MOD\NTR\src\main\resources\assets\ntr\textures\block" />
       <recent name="D:\MOD\NTR\src\main\resources\data\ntr\recipes" />
       <recent name="D:\MOD\NTR\src\main\resources\assets\minecraft\textures\models" />
       <recent name="D:\MOD\NTR\src\main\resources\assets\minecraft\textures\models\g" />
       <recent name="D:\MOD\NTR\src\main\resources\assets\minecraft" />
-      <recent name="D:\MOD\NTR\src\main\resources\assets" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="studio.renascence.ntr" />
       <recent name="studio.renascence.ntr.block" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.runClient">
+  <component name="RunManager" selected="Gradle.NTR [build]">
     <configuration name="NTR [build]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />

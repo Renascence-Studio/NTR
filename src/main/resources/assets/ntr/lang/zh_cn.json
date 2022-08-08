@@ -20,6 +20,8 @@
   "block.ntr.ender_blaze_brick_slab": "末炎迁跃砖块台阶",
 
   "block.ntr.transmission_ore": "迁跃矿",
+  "block.ntr.transmission_dust_block": "迁跃尘块",
+  "block.ntr.transmission_ingot_block": "迁跃锭块",
 
   "item.ntr.ender_blaze_flint_and_steel": "末炎迁跃打火机",
   "item.ntr.real_ntr_head": "牛头人标识",

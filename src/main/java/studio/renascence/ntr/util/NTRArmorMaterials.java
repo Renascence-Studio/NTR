@@ -7,12 +7,13 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
+import studio.renascence.ntr.NTRUtil;
 import studio.renascence.ntr.init.NTRItems;
 
 import java.util.function.Supplier;
 
 public enum NTRArmorMaterials implements ArmorMaterial {
-    TRANSMISSION("transmission", 15, new int[]{2, 5, 6, 2}, 15, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(NTRItems.TRANSMISSION_INGOT.get()));
+    TRANSMISSION(NTRUtil.modRL("transmission").toString(), 15, new int[]{2, 5, 6, 2}, 15, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(NTRItems.TRANSMISSION_INGOT.get()));
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;

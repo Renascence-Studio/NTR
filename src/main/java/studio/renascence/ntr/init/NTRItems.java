@@ -17,7 +17,7 @@ public class NTRItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, NTR.MODID);
 
     public static final RegistryObject<Item> REAL_NTR_HEAD = ITEMS.register("real_ntr_head",
-            () -> new NTRHeadItem(itemPro().durability(5140)));
+            () -> new NTRHeadItem(itemPro().durability(5140).rarity(Rarity.EPIC)));
 
     public static final RegistryObject<Item> SANGUINITE_BRICKS = ITEMS.register("sanguinite_bricks",
             () -> new BlockItem(NTRBlocks.SANGUINITE_BRICKS.get(), itemPro()));
@@ -97,6 +97,10 @@ public class NTRItems {
 
     public static final RegistryObject<Item> TRANSMISSION_ORE = ITEMS.register("transmission_ore",
             () -> new BlockItem(NTRBlocks.TRANSMISSION_ORE.get(), itemPro()));
+    public static final RegistryObject<Item> TRANSMISSION_DUST_BLOCK = ITEMS.register("transmission_dust_block",
+            () -> new BlockItem(NTRBlocks.TRANSMISSION_DUST_BLOCK.get(), itemPro()));
+    public static final RegistryObject<Item> TRANSMISSION_INGOT_BLOCK = ITEMS.register("transmission_ingot_block",
+            () -> new BlockItem(NTRBlocks.TRANSMISSION_INGOT_BLOCK.get(), itemPro()));
 
     public static Item.Properties itemPro() {
         return new Item.Properties().tab(NTRTabs.MAIN).fireResistant();

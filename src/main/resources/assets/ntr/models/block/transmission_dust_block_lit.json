@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "ntr:block/transmission_dust_top_lit",
+    "side": "ntr:block/transmission_dust_side_lit",
+    "bottom": "ntr:block/transmission_dust_bottom_lit"
+  }
+}

@@ -1,17 +1,16 @@
 package studio.renascence.ntr.init;
 
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import studio.renascence.ntr.NTR;
-import studio.renascence.ntr.block.DecoTransmissionFireBlock;
-import studio.renascence.ntr.block.PillarBlock;
-import studio.renascence.ntr.block.TransmissionBlock;
-import studio.renascence.ntr.block.TransmissionFireBlock;
+import studio.renascence.ntr.block.*;
 import studio.renascence.ntr.util.NTRProperties;
 
 public class NTRBlocks {
@@ -55,4 +54,9 @@ public class NTRBlocks {
 
     public static final RegistryObject<Block> TRANSMISSION_ORE = BLOCKS.register("transmission_ore",
             () -> new OreBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE), UniformInt.of(0, 2)));
+
+    public static final RegistryObject<Block> TRANSMISSION_DUST_BLOCK = BLOCKS.register("transmission_dust_block",
+            () -> new GlitterableBlock(BlockBehaviour.Properties.of(Material.SAND, DyeColor.PURPLE).strength(0.5F).sound(SoundType.SAND)));
+    public static final RegistryObject<Block> TRANSMISSION_INGOT_BLOCK = BLOCKS.register("transmission_ingot_block",
+            () -> new GlitterableBlock(BlockBehaviour.Properties.of(Material.METAL, DyeColor.PURPLE).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
 }

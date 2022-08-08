@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "glitter=false": {
+      "model": "ntr:block/transmission_dust_block"
+    },
+    "glitter=true": {
+      "model": "ntr:block/transmission_dust_block_lit"
+    }
+  }
+}

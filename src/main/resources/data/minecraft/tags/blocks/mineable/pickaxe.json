@@ -14,6 +14,8 @@
     "ntr:ender_blaze_pillar",
     "ntr:ender_blaze_brick_slab",
     "ntr:ender_blaze_brick_stairs",
-    "ntr:transmission_ore"
+    "ntr:transmission_ore",
+    "ntr:transmission_dust_block",
+    "ntr:transmission_ingot_block"
   ]
 }
