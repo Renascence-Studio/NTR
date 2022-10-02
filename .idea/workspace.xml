@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="645b4569-25c0-43c1-afa5-78df03d9f71b" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/NTR.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/NTR.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/NTR.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/NTR.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +44,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="NTR" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="forgegradle runs" type="c8890929:TasksNode$1" />
+                <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -117,7 +119,7 @@
       <recent name="studio.renascence.ntr.block" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.NTR [build]">
+  <component name="RunManager">
     <configuration name="NTR [build]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
