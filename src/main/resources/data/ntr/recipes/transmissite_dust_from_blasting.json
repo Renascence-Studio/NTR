@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "ntr:transmissite_ore"
+  },
+  "result": "ntr:transmissite_dust",
+  "experience": 0.5,
+  "cookingtime": 100
+}

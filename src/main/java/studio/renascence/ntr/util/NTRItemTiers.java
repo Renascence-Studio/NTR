@@ -12,7 +12,7 @@ import studio.renascence.ntr.init.NTRItems;
 import java.util.function.Supplier;
 
 public enum NTRItemTiers implements Tier {
-    TRANSMISSION(2, 514, 6.0F, 2.0F, 8, () -> Ingredient.of(NTRItems.TRANSMISSION_INGOT.get()));
+    TRANSMISSITE(2, 514, 6.0F, 2.0F, 8, () -> Ingredient.of(NTRItems.TRANSMISSITE_DUST.get()));
 
     private final int level;
     private final int uses;

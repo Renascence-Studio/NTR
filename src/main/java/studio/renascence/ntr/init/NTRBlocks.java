@@ -5,17 +5,14 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraftforge.registries.RegistryObject;
-import studio.renascence.ntr.NTR;
-import studio.renascence.ntr.block.*;
+import studio.renascence.ntr.impl.block.*;
 import studio.renascence.ntr.util.NTRProperties;
 
-public class NTRBlocks {
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, NTR.MODID);
+import static studio.renascence.ntr.NTRUtil.BLOCKS;
 
+public class NTRBlocks {
     public static final RegistryObject<Block> SANGUINITE_BRICKS = BLOCKS.register("sanguinite_bricks",
             () -> new Block(NTRProperties.SANGUINITE_BLOCK));
     public static final RegistryObject<Block> CHISELED_SANGUINITE_BRICKS = BLOCKS.register("chiseled_sanguinite_bricks",
@@ -29,9 +26,6 @@ public class NTRBlocks {
             () -> new SlabBlock(NTRProperties.SANGUINITE_BLOCK));
     public static final RegistryObject<Block> SANGUINITE_BRICK_FENCE = BLOCKS.register("sanguinite_brick_fence",
             () -> new FenceBlock(NTRProperties.SANGUINITE_BLOCK));
-
-    public static final RegistryObject<Block> SANGUINITE_PILLAR = BLOCKS.register("sanguinite_pillar",
-            () -> new PillarBlock(NTRProperties.SANGUINITE_BLOCK));
 
     public static final RegistryObject<Block> ENDER_TRANSMIT_BLOCK = BLOCKS.register("ender_transmission_block",
             () -> new TransmissionBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN), Level.END));
@@ -52,11 +46,13 @@ public class NTRBlocks {
     public static final RegistryObject<Block> ENDER_BLAZE_BRICK_SLAB = BLOCKS.register("ender_blaze_brick_slab",
             () -> new SlabBlock(NTRProperties.ENDER_BLAZE_BLOCK));
 
-    public static final RegistryObject<Block> TRANSMISSION_ORE = BLOCKS.register("transmission_ore",
-            () -> new OreBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE), UniformInt.of(0, 2)));
+    public static final RegistryObject<Block> TRANSMISSITE_ORE = BLOCKS.register("transmissite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE), UniformInt.of(0, 2)));
 
-    public static final RegistryObject<Block> TRANSMISSION_DUST_BLOCK = BLOCKS.register("transmission_dust_block",
-            () -> new GlitterableBlock(BlockBehaviour.Properties.of(Material.SAND, DyeColor.PURPLE).strength(0.5F).sound(SoundType.SAND)));
-    public static final RegistryObject<Block> TRANSMISSION_INGOT_BLOCK = BLOCKS.register("transmission_ingot_block",
-            () -> new GlitterableBlock(BlockBehaviour.Properties.of(Material.METAL, DyeColor.PURPLE).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> TRANSMISSITE_DUST_BLOCK = BLOCKS.register("transmissite_dust_block",
+            () -> new GlitterableBlock(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.SNARE).mapColor(DyeColor.PURPLE).strength(0.5F).sound(SoundType.SAND)));
+    public static final RegistryObject<Block> TRANSMISSITE_INGOT_BLOCK = BLOCKS.register("transmissite_ingot_block",
+            () -> new GlitterableBlock(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
+    public static void load() {}
 }

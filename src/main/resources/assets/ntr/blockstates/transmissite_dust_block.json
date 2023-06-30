@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "glitter=false": {
+      "model": "ntr:block/transmissite_dust_block"
+    },
+    "glitter=true": {
+      "model": "ntr:block/transmissite_dust_block_lit"
+    }
+  }
+}

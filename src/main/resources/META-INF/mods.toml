@@ -1,14 +1,32 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[47,)"
 license="MIT"
+
 [[mods]]
 modId="ntr"
 version="${file.jarVersion}"
 displayName="Nether Transition Remains"
-authors="Renascence-Studio, Chemiofitor, Naive Ranger, GQ2529, Craft_Ziyang"
+displayURL="https://www.mcmod.cn/class/7208.html"
+# logoFile="icon.png"
+authors="RenascenceStudio,Chemiofitor,NaiveRanger,GQ2529,Craft_Ziyang"
+
+description='''
+Help players survive in the Nether better!
+You can go to the End through the Nether!
+It also prepares a new relic for the players who love to explore,
+More content is in the game waiting for you!
+'''
+
 [[dependencies.ntr]]
-    modId="forge"
-    mandatory=true
-    versionRange="[40,)"
-    ordering="NONE"
-    side="BOTH"
+   modId="forge"
+   mandatory=true
+   versionRange="[47,)"
+   ordering="NONE"
+   side="BOTH"
+
+[[dependencies.ntr]]
+   modId="minecraft"
+   mandatory=true
+   versionRange="[1.20.1,1.21)"
+   ordering="NONE"
+   side="BOTH"

@@ -1,5 +1,5 @@
 {
-  "itemGroup.ntr": "Nether Transition Remains",
+  "itemGroup.ntr.main": "Nether Transition Remains",
 
   "block.ntr.sanguinite_bricks": "Sanguinite Bricks",
   "block.ntr.chiseled_sanguinite_bricks": "Chiseled Sanguinite Bricks",
@@ -19,32 +19,28 @@
   "block.ntr.ender_blaze_brick_stairs": "Ender-Blaze Transmission Brick Stairs",
   "block.ntr.ender_blaze_brick_slab": "Ender-Blaze Transmission Brick Slab",
 
-  "block.ntr.transmission_ore": "Transmission Ore",
-  "block.ntr.transmission_dust_block": "Transmission Dust Block",
-  "block.ntr.transmission_ingot_block": "Transmission Ingot Block",
+  "block.ntr.transmissite_ore": "Transmissite Ore",
+  "block.ntr.transmissite_dust_block": "Transmissite Dust Block",
+  "block.ntr.transmissite_ingot_block": "Transmissite Ingot Block",
 
-  "item.ntr.ender_blaze_flint_and_steel": "Ender-Blaze Transmission Flint and Steel",
+  "item.ntr.ender_blaze_flint_and_transmissite": "Ender-Blaze Transmission Flint and Transmissite",
   "item.ntr.real_ntr_head": "Mooshroom Head",
 
   "item.ntr.ender_gemstone": "Ender Transmission Gemstone",
-  "item.ntr.transmission_dust": "Transmission Dust",
-  "item.ntr.transmission_ingot": "Transmission Ingot",
-  "item.ntr.transmission_stick": "Transmission Stick",
+  "item.ntr.transmissite_dust": "Transmissite Dust",
+  "item.ntr.transmissite_ingot": "Transmissite Ingot",
+  "item.ntr.transmissite_stick": "Transmissite Stick",
 
-  "item.ntr.transmission_sword": "Transmission Sword",
-  "item.ntr.transmission_knife": "Transmission Knife",
-  "item.ntr.transmission_pickaxe": "Transmission Pickaxe",
-  "item.ntr.transmission_axe": "Transmission Axe",
-  "item.ntr.transmission_hoe": "Transmission Hoe",
-  "item.ntr.transmission_shovel": "Transmission Shovel",
-  "item.ntr.transmission_shears": "Transmission Shears",
+  "item.ntr.transmissite_sword": "Transmissite Sword",
+  "item.ntr.transmissite_knife": "Transmissite Knife",
+  "item.ntr.transmissite_pickaxe": "Transmissite Pickaxe",
+  "item.ntr.transmissite_axe": "Transmissite Axe",
+  "item.ntr.transmissite_hoe": "Transmissite Hoe",
+  "item.ntr.transmissite_shovel": "Transmissite Shovel",
+  "item.ntr.transmissite_shears": "Transmissite Shears",
 
-  "item.ntr.transmission_helmet": "Transmission Helmet",
-  "item.ntr.transmission_chestplate": "Transmission Chestplate",
-  "item.ntr.transmission_leggings": "Transmission Leggings",
-  "item.ntr.transmission_boots": "Transmission Boots",
-
-  "item.ntr.transmission_bucket": "Transmission Bucket",
-  "item.ntr.water_transmission_bucket": "Water Transmission Bucket",
-  "item.ntr.lava_transmission_bucket": "Lava Transmission Bucket"
+  "item.ntr.transmissite_helmet": "Transmissite Helmet",
+  "item.ntr.transmissite_chestplate": "Transmissite Chestplate",
+  "item.ntr.transmissite_leggings": "Transmissite Leggings",
+  "item.ntr.transmissite_boots": "Transmissite Boots"
 }

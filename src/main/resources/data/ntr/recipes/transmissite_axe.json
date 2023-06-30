@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "#s",
+    " s"
+  ],
+  "key": {
+    "#": {
+      "item": "ntr:transmissite_ingot"
+    },
+    "s": {
+      "item": "ntr:transmissite_stick"
+    }
+  },
+  "result": {
+    "item": "ntr:transmissite_axe"
+  }
+}

@@ -1,24 +1,16 @@
 package studio.renascence.ntr.init;
 
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.material.Fluids;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import studio.renascence.ntr.NTR;
-import studio.renascence.ntr.item.NTRHeadItem;
-import studio.renascence.ntr.item.TranBucketItem;
+import studio.renascence.ntr.impl.item.TransmissiteArmor;
+import studio.renascence.ntr.impl.item.TransmissiteAxe;
+import studio.renascence.ntr.impl.item.TransmissiteSword;
 import studio.renascence.ntr.util.NTRArmorMaterials;
 import studio.renascence.ntr.util.NTRItemTiers;
-import studio.renascence.ntr.util.NTRTabs;
+
+import static studio.renascence.ntr.NTRUtil.ITEMS;
 
 public class NTRItems {
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, NTR.MODID);
-
-    public static final RegistryObject<Item> REAL_NTR_HEAD = ITEMS.register("real_ntr_head",
-            () -> new NTRHeadItem(itemPro().durability(5140).rarity(Rarity.EPIC)));
-
     public static final RegistryObject<Item> SANGUINITE_BRICKS = ITEMS.register("sanguinite_bricks",
             () -> new BlockItem(NTRBlocks.SANGUINITE_BRICKS.get(), itemPro()));
     public static final RegistryObject<Item> CHISELED_SANGUINITE_BRICKS = ITEMS.register("chiseled_sanguinite_bricks",
@@ -32,9 +24,6 @@ public class NTRItems {
             () -> new BlockItem(NTRBlocks.SANGUINITE_BRICK_SLAB.get(), itemPro()));
     public static final RegistryObject<Item> SANGUINITE_BRICK_FENCE = ITEMS.register("sanguinite_brick_fence",
             () -> new BlockItem(NTRBlocks.SANGUINITE_BRICK_FENCE.get(), itemPro()));
-
-    public static final RegistryObject<Item> SANGUINITE_PILLAR = ITEMS.register("sanguinite_pillar",
-            () -> new BlockItem(NTRBlocks.SANGUINITE_PILLAR.get(), itemPro()));
 
     public static final RegistryObject<Item> ENDER_TRANSMIT_BLOCK = ITEMS.register("ender_transmission_block",
             () -> new BlockItem(NTRBlocks.ENDER_TRANSMIT_BLOCK.get(), itemPro()));
@@ -54,58 +43,53 @@ public class NTRItems {
             () -> new BlockItem(NTRBlocks.ENDER_BLAZE_BRICK_STAIRS.get(), itemPro()));
     public static final RegistryObject<Item> ENDER_BLAZE_BRICK_SLAB = ITEMS.register("ender_blaze_brick_slab",
             () -> new BlockItem(NTRBlocks.ENDER_BLAZE_BRICK_SLAB.get(), itemPro()));
-    public static final RegistryObject<Item> ENDER_BLAZE_FLINT_AND_STEEL = ITEMS.register("ender_blaze_flint_and_steel",
-            () -> new FlintAndSteelItem(itemPro().durability(1140)));
+    public static final RegistryObject<Item> ENDER_BLAZE_FLINT_AND_TRANSMISSITE = ITEMS.register("ender_blaze_flint_and_transmissite",
+            () -> new FlintAndSteelItem(itemProX().durability(1140)));
 
     public static final RegistryObject<Item> ENDER_GEMSTONE = ITEMS.register("ender_gemstone",
             () -> new Item(itemProX()));
-    public static final RegistryObject<Item> TRANSMISSION_DUST = ITEMS.register("transmission_dust",
+    public static final RegistryObject<Item> TRANSMISSITE_DUST = ITEMS.register("transmissite_dust",
             () -> new Item(itemProX()));
-    public static final RegistryObject<Item> TRANSMISSION_INGOT = ITEMS.register("transmission_ingot",
-            () -> new Item(itemPro()));
+    public static final RegistryObject<Item> TRANSMISSITE_INGOT = ITEMS.register("transmissite_ingot",
+            () -> new Item(itemProX()));
 
-    public static final RegistryObject<Item> TRANSMISSION_STICK = ITEMS.register("transmission_stick",
-            () -> new Item(itemPro()));
-    public static final RegistryObject<Item> TRANSMISSION_SWORD = ITEMS.register("transmission_sword",
-            () -> new SwordItem(NTRItemTiers.TRANSMISSION, 3, -2.4F, itemPro()));
-    public static final RegistryObject<Item> TRANSMISSION_SHOVEL = ITEMS.register("transmission_shovel",
-            () -> new ShovelItem(NTRItemTiers.TRANSMISSION, 1.5F, -3.0F, itemPro()));
-    public static final RegistryObject<Item> TRANSMISSION_PICKAXE = ITEMS.register("transmission_pickaxe",
-            () -> new PickaxeItem(NTRItemTiers.TRANSMISSION, 1, -2.8F, itemPro()));
-    public static final RegistryObject<Item> TRANSMISSION_AXE = ITEMS.register("transmission_axe",
-            () -> new AxeItem(NTRItemTiers.TRANSMISSION, 6.0F, -3.1F, itemPro()));
-    public static final RegistryObject<Item> TRANSMISSION_HOE = ITEMS.register("transmission_hoe",
-            () -> new HoeItem(NTRItemTiers.TRANSMISSION, -2, -1.0F, itemPro()));
-    public static final RegistryObject<Item> TRANSMISSION_SHEARS = ITEMS.register("transmission_shears",
-            () -> new ShearsItem(itemPro().durability(514)));
+    public static final RegistryObject<Item> TRANSMISSITE_STICK = ITEMS.register("transmissite_stick",
+            () -> new Item(itemProX()));
+    public static final RegistryObject<Item> TRANSMISSITE_SWORD = ITEMS.register("transmissite_sword",
+            () -> new TransmissiteSword(NTRItemTiers.TRANSMISSITE, 3, -2.4F, itemProX()));
+    public static final RegistryObject<Item> TRANSMISSITE_SHOVEL = ITEMS.register("transmissite_shovel",
+            () -> new ShovelItem(NTRItemTiers.TRANSMISSITE, 1.5F, -3.0F, itemProX()));
+    public static final RegistryObject<Item> TRANSMISSITE_PICKAXE = ITEMS.register("transmissite_pickaxe",
+            () -> new PickaxeItem(NTRItemTiers.TRANSMISSITE, 1, -2.8F, itemProX()));
+    public static final RegistryObject<Item> TRANSMISSITE_AXE = ITEMS.register("transmissite_axe",
+            () -> new TransmissiteAxe(NTRItemTiers.TRANSMISSITE, 6.0F, -3.1F, itemProX()));
+    public static final RegistryObject<Item> TRANSMISSITE_HOE = ITEMS.register("transmissite_hoe",
+            () -> new HoeItem(NTRItemTiers.TRANSMISSITE, -2, -1.0F, itemProX()));
+    public static final RegistryObject<Item> TRANSMISSITE_SHEARS = ITEMS.register("transmissite_shears",
+            () -> new ShearsItem(itemProX().durability(514)));
 
-    public static final RegistryObject<Item> TRANSMISSION_HELMET = ITEMS.register("transmission_helmet",
-            () -> new ArmorItem(NTRArmorMaterials.TRANSMISSION, EquipmentSlot.HEAD, itemPro()));
-    public static final RegistryObject<Item> TRANSMISSION_CHESTPLATE = ITEMS.register("transmission_chestplate",
-            () -> new ArmorItem(NTRArmorMaterials.TRANSMISSION, EquipmentSlot.CHEST, itemPro()));
-    public static final RegistryObject<Item> TRANSMISSION_LEGGINGS = ITEMS.register("transmission_leggings",
-            () -> new ArmorItem(NTRArmorMaterials.TRANSMISSION, EquipmentSlot.LEGS, itemPro()));
-    public static final RegistryObject<Item> TRANSMISSION_BOOTS = ITEMS.register("transmission_boots",
-            () -> new ArmorItem(NTRArmorMaterials.TRANSMISSION, EquipmentSlot.FEET, itemPro()));
+    public static final RegistryObject<Item> TRANSMISSITE_HELMET = ITEMS.register("transmissite_helmet",
+            () -> new TransmissiteArmor(NTRArmorMaterials.TRANSMISSITE, ArmorItem.Type.HELMET, itemProX()));
+    public static final RegistryObject<Item> TRANSMISSITE_CHESTPLATE = ITEMS.register("transmissite_chestplate",
+            () -> new TransmissiteArmor(NTRArmorMaterials.TRANSMISSITE, ArmorItem.Type.CHESTPLATE, itemProX()));
+    public static final RegistryObject<Item> TRANSMISSITE_LEGGINGS = ITEMS.register("transmissite_leggings",
+            () -> new TransmissiteArmor(NTRArmorMaterials.TRANSMISSITE, ArmorItem.Type.LEGGINGS, itemProX()));
+    public static final RegistryObject<Item> TRANSMISSITE_BOOTS = ITEMS.register("transmissite_boots",
+            () -> new TransmissiteArmor(NTRArmorMaterials.TRANSMISSITE, ArmorItem.Type.BOOTS, itemProX()));
 
-    public static final RegistryObject<Item> TRANSMISSION_BUCKET = ITEMS.register("transmission_bucket",
-            () -> new TranBucketItem(() -> Fluids.EMPTY, itemPro().stacksTo(16)));
-    public static final RegistryObject<Item> WATER_TRANSMISSION_BUCKET = ITEMS.register("water_transmission_bucket",
-            () -> new TranBucketItem(() -> Fluids.WATER, itemPro().stacksTo(1)));
-    public static final RegistryObject<Item> LAVA_TRANSMISSION_BUCKET = ITEMS.register("lava_transmission_bucket",
-            () -> new TranBucketItem(() -> Fluids.LAVA, itemPro().stacksTo(1)));
-
-    public static final RegistryObject<Item> TRANSMISSION_ORE = ITEMS.register("transmission_ore",
-            () -> new BlockItem(NTRBlocks.TRANSMISSION_ORE.get(), itemPro()));
-    public static final RegistryObject<Item> TRANSMISSION_DUST_BLOCK = ITEMS.register("transmission_dust_block",
-            () -> new BlockItem(NTRBlocks.TRANSMISSION_DUST_BLOCK.get(), itemPro()));
-    public static final RegistryObject<Item> TRANSMISSION_INGOT_BLOCK = ITEMS.register("transmission_ingot_block",
-            () -> new BlockItem(NTRBlocks.TRANSMISSION_INGOT_BLOCK.get(), itemPro()));
+    public static final RegistryObject<Item> TRANSMISSITE_ORE = ITEMS.register("transmissite_ore",
+            () -> new BlockItem(NTRBlocks.TRANSMISSITE_ORE.get(), itemPro()));
+    public static final RegistryObject<Item> TRANSMISSITE_DUST_BLOCK = ITEMS.register("transmissite_dust_block",
+            () -> new BlockItem(NTRBlocks.TRANSMISSITE_DUST_BLOCK.get(), itemPro()));
+    public static final RegistryObject<Item> TRANSMISSITE_INGOT_BLOCK = ITEMS.register("transmissite_ingot_block",
+            () -> new BlockItem(NTRBlocks.TRANSMISSITE_INGOT_BLOCK.get(), itemPro()));
 
     public static Item.Properties itemPro() {
-        return new Item.Properties().tab(NTRTabs.MAIN).fireResistant();
+        return new Item.Properties();
     }
     public static Item.Properties itemProX() {
-        return new Item.Properties().tab(NTRTabs.MAIN);
+        return new Item.Properties().fireResistant();
     }
+
+    public static void load() {}
 }
