@@ -1,4 +1,4 @@
-package studio.renascence.ntr.impl.block;
+package studio.renascence.ntr.impl.common.block;
 
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;

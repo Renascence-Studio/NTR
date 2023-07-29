@@ -13,7 +13,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-import studio.renascence.ntr.impl.tile.renderer.PillarTileRenderer;
+import studio.renascence.ntr.impl.client.tesr.PillarTileRenderer;
 import studio.renascence.ntr.init.NTRBlockEntityTypes;
 import studio.renascence.ntr.init.NTRBlocks;
 

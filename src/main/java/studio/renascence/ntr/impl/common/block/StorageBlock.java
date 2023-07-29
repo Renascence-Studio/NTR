@@ -1,4 +1,4 @@
-package studio.renascence.ntr.impl.block;
+package studio.renascence.ntr.impl.common.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
-import studio.renascence.ntr.impl.tile.StorageTile;
+import studio.renascence.ntr.impl.common.tile.StorageTile;
 
 import java.util.function.BiFunction;
 

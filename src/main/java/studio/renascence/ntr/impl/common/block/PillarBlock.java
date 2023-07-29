@@ -1,4 +1,4 @@
-package studio.renascence.ntr.impl.block;
+package studio.renascence.ntr.impl.common.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -10,13 +10,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import studio.renascence.ntr.impl.tile.PillarTile;
+import studio.renascence.ntr.impl.common.tile.PillarTile;
 
 public class PillarBlock extends StorageBlock {
 
@@ -56,12 +55,12 @@ public class PillarBlock extends StorageBlock {
 
     @Override
     public VoxelShape getShape(BlockState p_60555_, BlockGetter p_60556_, BlockPos p_60557_, CollisionContext p_60558_) {
-        VoxelShape shape1 = Block.box(1, 0, 1, 15, 1, 15);
-        VoxelShape shape2 = Block.box(2, 1, 2, 14, 2, 14);
-        VoxelShape shape3 = Block.box(3, 2, 3, 13, 12, 13);
-        VoxelShape shape4 = Block.box(2, 12, 2, 14, 13, 14);
-        VoxelShape shape5 = Block.box(1, 13, 1, 15, 14, 15);
-        VoxelShape shape6 = Block.box(2, 14, 2, 14, 15, 14);
+        VoxelShape shape1 = box(1, 0, 1, 15, 1, 15);
+        VoxelShape shape2 = box(2, 1, 2, 14, 2, 14);
+        VoxelShape shape3 = box(3, 2, 3, 13, 12, 13);
+        VoxelShape shape4 = box(2, 12, 2, 14, 13, 14);
+        VoxelShape shape5 = box(1, 13, 1, 15, 14, 15);
+        VoxelShape shape6 = box(2, 14, 2, 14, 15, 14);
         return Shapes.or(shape1, shape2, shape3, shape4, shape5, shape6);
     }
 

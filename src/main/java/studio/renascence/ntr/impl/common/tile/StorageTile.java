@@ -1,4 +1,4 @@
-package studio.renascence.ntr.impl.tile;
+package studio.renascence.ntr.impl.common.tile;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;

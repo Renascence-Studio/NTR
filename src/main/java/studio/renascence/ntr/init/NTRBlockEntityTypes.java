@@ -7,7 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import studio.renascence.ntr.NTRMod;
-import studio.renascence.ntr.impl.tile.PillarTile;
+import studio.renascence.ntr.impl.common.tile.PillarTile;
 
 public class NTRBlockEntityTypes {
     public static final DeferredRegister<BlockEntityType<?>> TILES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, NTRMod.MODID);

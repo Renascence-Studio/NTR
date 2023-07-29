@@ -6,10 +6,10 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import studio.renascence.ntr.NTRMod;
-import studio.renascence.ntr.impl.item.TaurenHead;
-import studio.renascence.ntr.impl.item.TransmissiteArmor;
-import studio.renascence.ntr.impl.item.TransmissiteAxe;
-import studio.renascence.ntr.impl.item.TransmissiteSword;
+import studio.renascence.ntr.impl.common.item.TaurenHead;
+import studio.renascence.ntr.impl.common.item.TransmissiteArmor;
+import studio.renascence.ntr.impl.common.item.TransmissiteAxe;
+import studio.renascence.ntr.impl.common.item.TransmissiteSword;
 import studio.renascence.ntr.util.NTRArmorMaterials;
 import studio.renascence.ntr.util.NTRItemTiers;
 

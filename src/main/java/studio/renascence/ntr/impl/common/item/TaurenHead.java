@@ -1,4 +1,4 @@
-package studio.renascence.ntr.impl.item;
+package studio.renascence.ntr.impl.common.item;
 
 
 import net.minecraft.ChatFormatting;

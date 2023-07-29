@@ -5,7 +5,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import studio.renascence.ntr.impl.tile.PillarTile;
+import studio.renascence.ntr.impl.common.tile.PillarTile;
 import studio.renascence.ntr.init.NTRBlocks;
 
 import java.util.Objects;

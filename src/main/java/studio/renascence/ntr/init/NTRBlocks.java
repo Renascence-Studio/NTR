@@ -11,7 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import studio.renascence.ntr.NTRMod;
-import studio.renascence.ntr.impl.block.*;
+import studio.renascence.ntr.impl.common.block.*;
 import studio.renascence.ntr.util.NTRProperties;
 
 public class NTRBlocks {

@@ -1,4 +1,4 @@
-package studio.renascence.ntr.impl.block;
+package studio.renascence.ntr.impl.common.block;
 
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.BaseFireBlock;

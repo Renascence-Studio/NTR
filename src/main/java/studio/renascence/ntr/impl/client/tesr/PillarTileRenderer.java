@@ -1,4 +1,4 @@
-package studio.renascence.ntr.impl.tile.renderer;
+package studio.renascence.ntr.impl.client.tesr;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
@@ -11,7 +11,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import studio.renascence.ntr.impl.tile.PillarTile;
+import studio.renascence.ntr.impl.common.tile.PillarTile;
 
 @OnlyIn(Dist.CLIENT)
 public class PillarTileRenderer implements BlockEntityRenderer<PillarTile> {
