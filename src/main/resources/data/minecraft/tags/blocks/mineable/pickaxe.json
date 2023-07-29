@@ -13,8 +13,10 @@
     "ntr:ender_blaze_pillar",
     "ntr:ender_blaze_brick_slab",
     "ntr:ender_blaze_brick_stairs",
+    "ntr:ender_blaze_brick_fence",
     "ntr:transmissite_ore",
     "ntr:transmissite_dust_block",
-    "ntr:transmissite_ingot_block"
+    "ntr:transmissite_ingot_block",
+    "ntr:sanguinite_pillar"
   ]
 }

@@ -5,224 +5,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09f57ec5-ab30-4b4b-8ed4-f3bb86d74223" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRMod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/DecoTransmissionFireBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/GlitterableBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/TransmissionBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/TransmissionFireBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteArmor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteAxe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteSword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRBlocks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRTabs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/NTRArmorMaterials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/NTRItemTiers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/NTRProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/chiseled_ender_blaze_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/chiseled_sanguinite_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/cracked_sanguinite_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/deco_ender_transmission_fire.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/ender_blaze_brick_slab.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/ender_blaze_brick_stairs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/ender_blaze_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/ender_blaze_pillar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/ender_transmission_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/ender_transmission_fire.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/sanguinite_brick_fence.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/sanguinite_brick_slab.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/sanguinite_brick_stairs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/sanguinite_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/transmissite_dust_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/transmissite_ingot_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/transmissite_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/en_us.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/zh_cn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/chiseled_ender_blaze_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/chiseled_sanguinite_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/cracked_sanguinite_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_brick_slab.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_brick_slab_top.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_brick_stairs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_brick_stairs_inner.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_brick_stairs_outer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_pillar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_pillar_horizontal.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_transmission_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_transmission_fire_floor0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_transmission_fire_floor1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_transmission_fire_side0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_transmission_fire_side1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_transmission_fire_side_alt0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_transmission_fire_side_alt1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/sanguinite_brick_fence_inventory.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/sanguinite_brick_fence_post.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/sanguinite_brick_fence_side.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/sanguinite_brick_slab.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/sanguinite_brick_slab_top.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/sanguinite_brick_stairs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/sanguinite_brick_stairs_inner.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/sanguinite_brick_stairs_outer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/sanguinite_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/transmissite_dust_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/transmissite_dust_block_lit.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/transmissite_ingot_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/transmissite_ingot_block_lit.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/transmissite_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/unactivated_ender_transmission_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/chiseled_ender_blaze_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/chiseled_sanguinite_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/cracked_sanguinite_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/deco_ender_transmission_fire.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/ender_blaze_brick_slab.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/ender_blaze_brick_stairs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/ender_blaze_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/ender_blaze_flint_and_transmissite.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/ender_blaze_pillar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/ender_gemstone.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/ender_transmission_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/ender_transmission_fire.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/lava_transmission_bucket.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/real_ntr_head.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/sanguinite_brick_fence.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/sanguinite_brick_slab.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/sanguinite_brick_stairs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/sanguinite_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_axe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_boots.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_chestplate.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_dust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_dust_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_helmet.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_hoe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_ingot.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_ingot_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_leggings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_pickaxe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_shears.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_shovel.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_stick.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/transmissite_sword.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/water_transmission_bucket.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/chiseled_ender_blaze_bricks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/chiseled_sanguinite_bricks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/cracked_sanguinite_bricks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/cracked_sanguinite_bricks.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_bricks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_pillar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_pillar_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_transmission_block.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_transmission_block.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_transmission_fire_0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_transmission_fire_0.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_transmission_fire_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_transmission_fire_1.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/sanguinite_bricks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_bottom_lit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_bottom_lit.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_side.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_side_lit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_side_lit.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_top_lit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_dust_top_lit.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot_lit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot_lit.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/unactivated_ender_transmission_block.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/ender_blaze_flint_and_steel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/ender_gemstone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/lava_transmission_bucket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_axe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_boots.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_bucket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_chestplate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_dust.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_helmet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_hoe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_ingot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_knife.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_leggings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_pickaxe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shears.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shovel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_stick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_sword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/water_transmission_bucket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/models/armor/transmissite_layer_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/models/armor/transmissite_layer_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/fences.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/items/fences.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/forge/biome_modifier/add_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/chiseled_ender_blaze_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/chiseled_sanguinite_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/cracked_sanguinite_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/ender_blaze_brick_slab.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/ender_blaze_brick_stairs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/ender_blaze_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/ender_blaze_pillar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/ender_transmission_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/sanguinite_brick_fence.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/sanguinite_brick_slab.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/sanguinite_brick_stairs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/sanguinite_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/transmissite_dust_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/transmissite_ingot_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/loot_tables/blocks/transmissite_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/chiseled_ender_blaze_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/chiseled_ender_blaze_bricks_stonecutting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/chiseled_sanguinite_bricks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/chiseled_sanguinite_bricks_stonecutting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/ender_blaze_brick_slab.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/ender_blaze_brick_slab_stonecutting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/ender_blaze_brick_stairs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/ender_blaze_brick_stairs_stonecutting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/ender_blaze_flint_and_steel.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/ender_blaze_pillar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/ender_blaze_pillar_stone_cutting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/ender_gemstone.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/sanguinite_brick_fence.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/sanguinite_brick_fence_stonecutting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/sanguinite_brick_slab.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/sanguinite_brick_slab_stonecutting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/sanguinite_brick_stairs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/sanguinite_brick_stairs_stonecutting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/shield.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_axe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_boots.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_chestplate.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_dust_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_dust_from_blasting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_dust_from_smelting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_helmet.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_hoe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_ingot.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_ingot_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_leggings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_pickaxe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_shears.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_shovel.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_stick.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/recipes/transmissite_sword.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/worldgen/configured_feature/ore_transmissite.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/ntr/worldgen/placed_feature/ore_transmissite.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/PillarBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/StorageBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TaurenHead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/tile/PillarTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/tile/StorageTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/tile/renderer/PillarTileRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRBlockEntityTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/PillarHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/textures/gui/container/creative_inventory/tab_ntr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/ender_blaze_brick_fence.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/sanguinite_pillar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_brick_fence_inventory.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_brick_fence_post.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_brick_fence_side.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/sanguinite_pillar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/ender_blaze_brick_fence.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/sanguinite_pillar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/tauren_head.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/chiseled_ender_blaze_bricks.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_bricks.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_pillar.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/lava.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/red_mooshroom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ntr.mixins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/TransmissionBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/TransmissionBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteArmor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteArmor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRTabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/zh_cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/zh_cn.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/chiseled_ender_blaze_bricks.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/chiseled_ender_blaze_bricks.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_bricks.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_bricks.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_pillar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_pillar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot_lit.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot_lit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ore.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ore.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/lava_transmission_bucket.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/lava_transmission_bucket.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_axe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_axe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_boots.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_boots.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_bucket.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_bucket.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_chestplate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_chestplate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_dust.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_dust.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_helmet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_helmet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_hoe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_hoe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_knife.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_knife.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_leggings.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_leggings.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_pickaxe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_pickaxe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shears.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shears.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shovel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shovel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_stick.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_stick.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_sword.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/water_transmission_bucket.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/water_transmission_bucket.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/fences.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/fences.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/items/fences.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/items/fences.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,12 +108,6 @@
                 <item name="NTR" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="NTR" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="forgegradle runs" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -295,27 +139,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "D:/Prog/NTR-Teacon/run/saves/新的世界/serverconfig",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Prog/NTR-Teacon/src/main/resources/assets/ntr/models/item&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Prog\NTR-Teacon\src\main\resources\assets\ntr\models\item" />
+      <recent name="D:\Prog\NTR-Teacon\src\main\resources\assets\ntr\models\block" />
+      <recent name="D:\Prog\NTR-Teacon\src\main\resources\assets\ntr\blockstates" />
       <recent name="D:\Prog\NTR-Teacon\run\saves\新的世界\serverconfig" />
       <recent name="D:\Prog\NTR-Teacon\src\main\resources" />
-      <recent name="D:\Prog\NTR-Teacon\src\main\java\studio\renascence\ntr\impl" />
-      <recent name="D:\Prog\NTR-Teacon\src\main\java\studio\renascence\ntr\impl\" />
-      <recent name="D:\Prog\NTR-Teacon\src\main\java\studio\renascence\ntr" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Prog\NTR-Teacon\src\main\resources\data\ntr\worldgen\configured_feature" />
+      <recent name="D:\Prog\NTR-Teacon\src\main\resources\assets\ntr\textures\block" />
+      <recent name="D:\Prog\NTR-Teacon\src\main\resources\assets\ntr\models\item" />
+      <recent name="D:\Prog\NTR-Teacon\src\main\resources\assets\ntr\textures\item" />
+      <recent name="D:\Prog\NTR-Teacon\src\main\resources\assets\ntr\geo\item\armor" />
+      <recent name="D:\Prog\NTR-Teacon\src\main\java\studio\renascence\ntr\util" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="studio.renascence.ntr.init.NTRTabs" />
+      <recent name="studio.renascence.ntr.init.NTRBlockEntityTypes" />
+      <recent name="studio.renascence.ntr.init.NTRBlocks" />
+      <recent name="studio.renascence.ntr.init.NTRItems" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="studio.renascence.ntr.impl.item" />
@@ -409,9 +264,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.NTR-Teacon [genIntellijRuns]" />
         <item itemvalue="Gradle.NTR-Teacon [createMcpToSrg]" />
         <item itemvalue="Gradle.NTR-Teacon [createSrgToMcp]" />
+        <item itemvalue="Gradle.NTR-Teacon [genIntellijRuns]" />
       </list>
     </recent_temporary>
   </component>
@@ -436,6 +291,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

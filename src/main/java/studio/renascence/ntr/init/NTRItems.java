@@ -1,23 +1,27 @@
 package studio.renascence.ntr.init;
 
 import net.minecraft.world.item.*;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import studio.renascence.ntr.NTRMod;
+import studio.renascence.ntr.impl.item.TaurenHead;
 import studio.renascence.ntr.impl.item.TransmissiteArmor;
 import studio.renascence.ntr.impl.item.TransmissiteAxe;
 import studio.renascence.ntr.impl.item.TransmissiteSword;
 import studio.renascence.ntr.util.NTRArmorMaterials;
 import studio.renascence.ntr.util.NTRItemTiers;
 
-import static studio.renascence.ntr.NTRUtil.ITEMS;
-
 public class NTRItems {
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, NTRMod.MODID);
+
     public static final RegistryObject<Item> SANGUINITE_BRICKS = ITEMS.register("sanguinite_bricks",
             () -> new BlockItem(NTRBlocks.SANGUINITE_BRICKS.get(), itemPro()));
     public static final RegistryObject<Item> CHISELED_SANGUINITE_BRICKS = ITEMS.register("chiseled_sanguinite_bricks",
             () -> new BlockItem(NTRBlocks.CHISELED_SANGUINITE_BRICKS.get(), itemPro()));
     public static final RegistryObject<Item> CRACKED_SANGUINITE_BRICKS = ITEMS.register("cracked_sanguinite_bricks",
             () -> new BlockItem(NTRBlocks.CRACKED_SANGUINITE_BRICKS.get(), itemPro()));
-
     public static final RegistryObject<Item> SANGUINITE_BRICK_STAIRS = ITEMS.register("sanguinite_brick_stairs",
             () -> new BlockItem(NTRBlocks.SANGUINITE_BRICK_STAIRS.get(), itemPro()));
     public static final RegistryObject<Item> SANGUINITE_BRICK_SLAB = ITEMS.register("sanguinite_brick_slab",
@@ -38,11 +42,12 @@ public class NTRItems {
             () -> new BlockItem(NTRBlocks.CHISELED_ENDER_BLAZE_BRICKS.get(), itemPro()));
     public static final RegistryObject<Item> ENDER_BLAZE_PILLAR = ITEMS.register("ender_blaze_pillar",
             () -> new BlockItem(NTRBlocks.ENDER_BLAZE_PILLAR.get(), itemPro()));
-
     public static final RegistryObject<Item> ENDER_BLAZE_BRICK_STAIRS = ITEMS.register("ender_blaze_brick_stairs",
             () -> new BlockItem(NTRBlocks.ENDER_BLAZE_BRICK_STAIRS.get(), itemPro()));
     public static final RegistryObject<Item> ENDER_BLAZE_BRICK_SLAB = ITEMS.register("ender_blaze_brick_slab",
             () -> new BlockItem(NTRBlocks.ENDER_BLAZE_BRICK_SLAB.get(), itemPro()));
+    public static final RegistryObject<Item> ENDER_BLAZE_BRICK_FENCE = ITEMS.register("ender_blaze_brick_fence",
+            () -> new BlockItem(NTRBlocks.ENDER_BLAZE_BRICK_FENCE.get(), itemPro()));
     public static final RegistryObject<Item> ENDER_BLAZE_FLINT_AND_TRANSMISSITE = ITEMS.register("ender_blaze_flint_and_transmissite",
             () -> new FlintAndSteelItem(itemProX().durability(1140)));
 
@@ -68,6 +73,9 @@ public class NTRItems {
     public static final RegistryObject<Item> TRANSMISSITE_SHEARS = ITEMS.register("transmissite_shears",
             () -> new ShearsItem(itemProX().durability(514)));
 
+    public static final RegistryObject<Item> TAUREN_HEAD = ITEMS.register("tauren_head",
+            () -> new TaurenHead(itemProX().rarity(Rarity.EPIC)));
+
     public static final RegistryObject<Item> TRANSMISSITE_HELMET = ITEMS.register("transmissite_helmet",
             () -> new TransmissiteArmor(NTRArmorMaterials.TRANSMISSITE, ArmorItem.Type.HELMET, itemProX()));
     public static final RegistryObject<Item> TRANSMISSITE_CHESTPLATE = ITEMS.register("transmissite_chestplate",
@@ -84,6 +92,9 @@ public class NTRItems {
     public static final RegistryObject<Item> TRANSMISSITE_INGOT_BLOCK = ITEMS.register("transmissite_ingot_block",
             () -> new BlockItem(NTRBlocks.TRANSMISSITE_INGOT_BLOCK.get(), itemPro()));
 
+    public static final RegistryObject<Item> SANGUINITE_PILLAR = ITEMS.register("sanguinite_pillar",
+            () -> new BlockItem(NTRBlocks.SANGUINITE_PILLAR.get(), itemPro()));
+
     public static Item.Properties itemPro() {
         return new Item.Properties();
     }
@@ -91,5 +102,7 @@ public class NTRItems {
         return new Item.Properties().fireResistant();
     }
 
-    public static void load() {}
+    public static void register(IEventBus bus) {
+        ITEMS.register(bus);
+    }
 }

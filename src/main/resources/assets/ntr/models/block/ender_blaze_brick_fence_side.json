@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "ntr:block/ender_blaze_bricks"
+  }
+}

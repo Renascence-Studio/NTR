@@ -1,7 +1,20 @@
 pluginManagement {
+    resolutionStrategy {
+        eachPlugin({
+            if (requested.id.namespace == 'org.spongepowered')
+                it.useModule(group: 'org.spongepowered', name: 'mixingradle', version: mixingradle_version)
+        })
+    }
     repositories {
         gradlePluginPortal()
-        maven { url = 'https://maven.minecraftforge.net/' }
+        maven {
+            name 'Forge Maven'
+            url 'https://maven.minecraftforge.net'
+        }
+        maven {
+            name 'SpongePowered Maven'
+            url 'https://repo.spongepowered.org/repository/maven-public'
+        }
     }
 }
 

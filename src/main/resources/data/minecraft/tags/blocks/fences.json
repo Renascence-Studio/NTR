@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ntr:sanguinite_brick_fence"
+    "ntr:sanguinite_brick_fence",
+    "ntr:ender_blaze_brick_fence"
   ]
 }

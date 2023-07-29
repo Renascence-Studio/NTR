@@ -19,6 +19,7 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 import studio.renascence.ntr.init.NTRItems;
+import studio.renascence.ntr.util.PillarHelper;
 
 public class TransmissionBlock extends Block {
     public static final BooleanProperty ACT = BooleanProperty.create("active_state");
@@ -37,11 +38,11 @@ public class TransmissionBlock extends Block {
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
         if (result.getDirection() == Direction.UP && player.getItemInHand(hand).getItem() == NTRItems.ENDER_BLAZE_FLINT_AND_TRANSMISSITE.get()) {
-            //if (PillarHelper.find(level, pos)) {
-            //    PillarHelper.clearTileItem(level, pos);
-            return createFire(level, pos, player, hand);
-            //}
-            //return InteractionResult.FAIL;
+            if (PillarHelper.find(level, pos)) {
+                PillarHelper.clearTileItem(level, pos);
+                return createFire(level, pos, player, hand);
+            }
+            return InteractionResult.FAIL;
         }
         return InteractionResult.PASS;
     }
@@ -52,6 +53,10 @@ public class TransmissionBlock extends Block {
         ItemStack itemstack = player.getItemInHand(hand);
         if (player instanceof ServerPlayer) {
             level.explode(null, pos.getX(), pos.getY()+0.2F, pos.getZ(), 2.5F, Level.ExplosionInteraction.NONE);
+            level.explode(null, pos.getX() + 3, pos.getY()+0.2F, pos.getZ() + 3, 2.5F, Level.ExplosionInteraction.NONE);
+            level.explode(null, pos.getX() + 3, pos.getY()+0.2F, pos.getZ() - 3, 2.5F, Level.ExplosionInteraction.NONE);
+            level.explode(null, pos.getX() - 3, pos.getY()+0.2F, pos.getZ() + 3, 2.5F, Level.ExplosionInteraction.NONE);
+            level.explode(null, pos.getX() - 3, pos.getY()+0.2F, pos.getZ() - 3, 2.5F, Level.ExplosionInteraction.NONE);
             CriteriaTriggers.PLACED_BLOCK.trigger((ServerPlayer)player, pos.above(), itemstack);
             itemstack.hurtAndBreak(1, player, (player1) -> player1.broadcastBreakEvent(hand));
         }
