@@ -15,9 +15,4 @@ public class TransmissiteAxe extends AxeItem implements TransmissiteItem {
         this.attack(p_43278_, p_43279_, p_43280_);
         return super.hurtEnemy(p_43278_, p_43279_, p_43280_);
     }
-
-    @Override
-    public boolean isFoil(ItemStack stack) {
-        return true;
-    }
 }

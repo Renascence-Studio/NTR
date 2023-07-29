@@ -43,5 +43,8 @@
   "item.ntr.transmissite_helmet": "迁跃头盔",
   "item.ntr.transmissite_chestplate": "迁跃胸甲",
   "item.ntr.transmissite_leggings": "迁跃护腿",
-  "item.ntr.transmissite_boots": "迁跃靴子"
+  "item.ntr.transmissite_boots": "迁跃靴子",
+
+  "item.ntr.tauren_head.tip_1": "感受到了力量吗？",
+  "item.ntr.tauren_head.tip_2": "戴上它！"
 }

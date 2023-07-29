@@ -5,55 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09f57ec5-ab30-4b4b-8ed4-f3bb86d74223" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/PillarBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/StorageBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TaurenHead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/tile/PillarTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/tile/StorageTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/tile/renderer/PillarTileRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRBlockEntityTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/PillarHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/textures/gui/container/creative_inventory/tab_ntr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/ender_blaze_brick_fence.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/blockstates/sanguinite_pillar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_brick_fence_inventory.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_brick_fence_post.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/ender_blaze_brick_fence_side.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/block/sanguinite_pillar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/ender_blaze_brick_fence.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/sanguinite_pillar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/models/item/tauren_head.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/chiseled_ender_blaze_bricks.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_bricks.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_pillar.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/lava.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/red_mooshroom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ntr.mixins.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/NTRUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/PillarBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/PillarBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/TransmissionBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/block/TransmissionBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteArmor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteArmor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TaurenHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TaurenHead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteAxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteAxe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteSword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/item/TransmissiteSword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/tile/PillarTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/tile/PillarTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/tile/renderer/PillarTileRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/impl/tile/renderer/PillarTileRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRBlockEntityTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRBlockEntityTypes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/init/NTRTabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/PillarHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studio/renascence/ntr/util/PillarHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/en_us.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/zh_cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/lang/zh_cn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/chiseled_ender_blaze_bricks.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/chiseled_ender_blaze_bricks.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_bricks.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_bricks.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_pillar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/ender_blaze_pillar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot_lit.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ingot_lit.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ore.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/block/transmission_ore.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/lava_transmission_bucket.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/lava_transmission_bucket.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_axe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_axe.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_boots.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_boots.png" afterDir="false" />
@@ -62,17 +27,16 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_dust.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_dust.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_helmet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_helmet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_hoe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_hoe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_ingot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_ingot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_knife.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_knife.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_leggings.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_leggings.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_pickaxe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_pickaxe.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shears.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shears.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shovel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_shovel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_stick.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_stick.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/transmission_sword.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/water_transmission_bucket.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/item/water_transmission_bucket.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/fences.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/fences.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/items/fences.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/items/fences.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/models/armor/transmissite_layer_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/models/armor/transmissite_layer_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/models/armor/transmissite_layer_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ntr/textures/models/armor/transmissite_layer_2.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

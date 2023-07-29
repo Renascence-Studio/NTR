@@ -43,5 +43,8 @@
   "item.ntr.transmissite_helmet": "Transmissite Helmet",
   "item.ntr.transmissite_chestplate": "Transmissite Chestplate",
   "item.ntr.transmissite_leggings": "Transmissite Leggings",
-  "item.ntr.transmissite_boots": "Transmissite Boots"
+  "item.ntr.transmissite_boots": "Transmissite Boots",
+
+  "item.ntr.tauren_head.tip_1": "Do you feel the power?",
+  "item.ntr.tauren_head.tip_2": "Wear it!"
 }

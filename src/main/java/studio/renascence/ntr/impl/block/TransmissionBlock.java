@@ -3,10 +3,12 @@ package studio.renascence.ntr.impl.block;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -18,6 +20,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.Vec3;
 import studio.renascence.ntr.init.NTRItems;
 import studio.renascence.ntr.util.PillarHelper;
 
@@ -38,8 +41,9 @@ public class TransmissionBlock extends Block {
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
         if (result.getDirection() == Direction.UP && player.getItemInHand(hand).getItem() == NTRItems.ENDER_BLAZE_FLINT_AND_TRANSMISSITE.get()) {
-            if (PillarHelper.find(level, pos)) {
-                PillarHelper.clearTileItem(level, pos);
+            PillarHelper.PillarResult flag = PillarHelper.find(level, pos);
+            if (flag.flag()) {
+                PillarHelper.clearTileItem(level, pos, flag.level());
                 return createFire(level, pos, player, hand);
             }
             return InteractionResult.FAIL;
@@ -64,6 +68,15 @@ public class TransmissionBlock extends Block {
         level.getBlockState(pos).setValue(ACT, true);
         level.setBlock(pos, defaultBlockState().setValue(ACT, Boolean.TRUE), UPDATE_ALL);
         return InteractionResult.sidedSuccess(level.isClientSide());
+    }
+
+    @Override
+    public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource randomSource) {
+        if (PillarHelper.find(level, pos).flag()) {
+            double tick = System.currentTimeMillis() / 800.0D;
+            Vec3 vec3 = pos.getCenter().yRot((float) (tick % (2 * Math.PI)));
+            level.addParticle(ParticleTypes.PORTAL, vec3.x, vec3.y, vec3.z, 0, 0.2, 0);
+        }
     }
 
     public ResourceKey<Level> getResourceKey() {

@@ -11,16 +11,23 @@ import studio.renascence.ntr.init.NTRBlocks;
 import java.util.Objects;
 
 public class PillarHelper {
-    public static boolean find(Level level, BlockPos pos) {
-        BlockPos pos1 = pos.east(2).north(2).above(2);
-        BlockPos pos2 = pos.east(2).south(2).above(2);
-        BlockPos pos3 = pos.west(2).north(2).above(2);
-        BlockPos pos4 = pos.west(2).south(2).above(2);
-        boolean b1 = matchBlock(level, pos1) && matchTileItem(level, pos1);
-        boolean b2 = matchBlock(level, pos2) && matchTileItem(level, pos2);
-        boolean b3 = matchBlock(level, pos3) && matchTileItem(level, pos3);
-        boolean b4 = matchBlock(level, pos4) && matchTileItem(level, pos4);
-        return (b1 && b2 && b3 && b4);
+    public record PillarResult(boolean flag, int level) {}
+
+    public static PillarResult find(Level level, BlockPos pos) {
+        for (int i = 0; i < 3; i++) {
+            BlockPos pos1 = pos.east(2).north(2).above(i);
+            BlockPos pos2 = pos.east(2).south(2).above(i);
+            BlockPos pos3 = pos.west(2).north(2).above(i);
+            BlockPos pos4 = pos.west(2).south(2).above(i);
+            boolean b1 = matchBlock(level, pos1) && matchTileItem(level, pos1);
+            boolean b2 = matchBlock(level, pos2) && matchTileItem(level, pos2);
+            boolean b3 = matchBlock(level, pos3) && matchTileItem(level, pos3);
+            boolean b4 = matchBlock(level, pos4) && matchTileItem(level, pos4);
+            if ((b1 && b2 && b3 && b4)) {
+                return new PillarResult(true, i);
+            }
+        }
+        return new PillarResult(false, 0);
     }
 
     private static boolean matchBlock(Level level, BlockPos pos) {
@@ -35,11 +42,11 @@ public class PillarHelper {
         return false;
     }
 
-    public static void clearTileItem(Level level, BlockPos pos) {
-        BlockPos pos1 = pos.east(2).north(2).above(2);
-        BlockPos pos2 = pos.east(2).south(2).above(2);
-        BlockPos pos3 = pos.west(2).north(2).above(2);
-        BlockPos pos4 = pos.west(2).south(2).above(2);
+    public static void clearTileItem(Level level, BlockPos pos, int i) {
+        BlockPos pos1 = pos.east(2).north(2).above(i);
+        BlockPos pos2 = pos.east(2).south(2).above(i);
+        BlockPos pos3 = pos.west(2).north(2).above(i);
+        BlockPos pos4 = pos.west(2).south(2).above(i);
         BlockPos[] poses = new BlockPos[]{pos1, pos2, pos3, pos4};
         for (BlockPos posV : poses) {
             if (matchTileItem(level, posV)) {

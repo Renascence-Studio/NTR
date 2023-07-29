@@ -6,6 +6,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -30,22 +31,19 @@ public class NTRMod {
 
         NTRUtil.register(bus);
 
-        bus.addListener(this::clientSetup);
+        bus.addListener(this::onClientSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
 
         LOGGER.info(MODNAME + " has been loaded!");
     }
 
-    private void clientSetup(FMLClientSetupEvent event) {
-        event.enqueueWork(() -> {
-            ItemBlockRenderTypes.setRenderLayer(NTRBlocks.DECO_ENDER_TRANSMISSION_FIRE.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(NTRBlocks.ENDER_TRANSMIT_FIRE.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(NTRBlocks.SANGUINITE_PILLAR.get(), RenderType.cutout());
-        });
+    @SubscribeEvent
+    public void onClientSetup(FMLClientSetupEvent event) {
+        ItemBlockRenderTypes.setRenderLayer(NTRBlocks.DECO_ENDER_TRANSMISSION_FIRE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(NTRBlocks.ENDER_TRANSMIT_FIRE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(NTRBlocks.SANGUINITE_PILLAR.get(), RenderType.cutout());
 
-        event.enqueueWork(() -> {
-            BlockEntityRenderers.register(NTRBlockEntityTypes.SANGUINITE_PILLAR.get(), PillarTileRenderer::new);
-        });
+        BlockEntityRenderers.register(NTRBlockEntityTypes.SANGUINITE_PILLAR.get(), PillarTileRenderer::new);
     }
 }

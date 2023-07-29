@@ -14,11 +14,8 @@ import studio.renascence.ntr.NTRMod;
 import studio.renascence.ntr.impl.block.*;
 import studio.renascence.ntr.util.NTRProperties;
 
-import java.util.Stack;
-
 public class NTRBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, NTRMod.MODID);
-    public static final Stack<Block> PILLAR = new Stack<>();
 
     public static final RegistryObject<Block> SANGUINITE_BRICKS = BLOCKS.register("sanguinite_bricks",
             () -> new Block(NTRProperties.SANGUINITE_BLOCK));
@@ -61,10 +58,7 @@ public class NTRBlocks {
     public static final RegistryObject<Block> TRANSMISSITE_INGOT_BLOCK = BLOCKS.register("transmissite_ingot_block",
             () -> new GlitterableBlock(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
     public static final RegistryObject<Block> SANGUINITE_PILLAR = BLOCKS.register("sanguinite_pillar",
-            () -> {
-                PILLAR.add(new PillarBlock(NTRProperties.SANGUINITE_BLOCK));
-                return PILLAR.peek();
-            });
+            () -> new PillarBlock(NTRProperties.SANGUINITE_BLOCK));
 
     public static void register(IEventBus bus) {
         BLOCKS.register(bus);

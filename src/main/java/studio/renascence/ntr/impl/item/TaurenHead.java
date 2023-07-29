@@ -1,6 +1,8 @@
 package studio.renascence.ntr.impl.item;
 
 
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -10,7 +12,11 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class TaurenHead extends Item {
 
@@ -36,5 +42,11 @@ public class TaurenHead extends Item {
         super.onArmorTick(stack, level, player);
         if (!player.hasEffect(MobEffects.DAMAGE_BOOST))
             player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100, 1));
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> list, TooltipFlag flag) {
+        list.add(Component.translatable("item.ntr.tauren_head.tip_1").withStyle(ChatFormatting.GOLD));
+        list.add(Component.translatable("item.ntr.tauren_head.tip_2").withStyle(ChatFormatting.GOLD));
     }
 }
