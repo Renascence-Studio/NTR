@@ -72,6 +72,8 @@ public class NTRItems {
             () -> new HoeItem(NTRItemTiers.TRANSMISSITE, -2, -1.0F, itemProX()));
     public static final RegistryObject<Item> TRANSMISSITE_SHEARS = ITEMS.register("transmissite_shears",
             () -> new ShearsItem(itemProX().durability(514)));
+    public static final RegistryObject<Item> TRANSMISSITE_KNIFE = ITEMS.register("transmissite_knife",
+            () -> new TransmissiteSword(NTRItemTiers.TRANSMISSITE, 0, -3.0F, itemProX()));
 
     public static final RegistryObject<Item> TAUREN_HEAD = ITEMS.register("tauren_head",
             () -> new TaurenHead(itemProX().rarity(Rarity.EPIC)));

@@ -89,10 +89,6 @@ repositories {
         name = "Jared's maven"
         url = "https://maven.blamejared.com/"
     }
-    maven {
-        name = 'GeckoLib'
-        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
-    }
 }
 
 dependencies {
@@ -107,8 +103,8 @@ dependencies {
 }
 
 mixin {
-    add sourceSets.main, 'create_enchantment_industry.refmap.json'
-    config 'create_enchantment_industry.mixins.json'
+    add sourceSets.main, 'ntr.refmap.json'
+    config 'ntr.mixins.json'
 
     debug.verbose = true
     debug.export = true
